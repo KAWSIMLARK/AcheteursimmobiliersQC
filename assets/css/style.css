@@ -1769,9 +1769,26 @@ a.situation-item {
 }
 
 .footer-cities-list li {
-    color: rgba(255, 255, 255, 0.85);
     font-size: 0.9rem;
     line-height: 1.4;
+}
+
+.footer-cities-list a {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-cities-list a:hover {
+    color: var(--color-white);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.footer-cities-list a.cities-more {
+    color: var(--color-white);
+    font-weight: 700;
+    font-style: italic;
 }
 
 @media (max-width: 1200px) {
