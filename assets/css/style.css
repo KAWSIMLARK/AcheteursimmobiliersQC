@@ -1791,16 +1791,8 @@ a.situation-item {
 }
 
 .footer-cities-list a.cities-more {
-    color: #FB923C;
-    border-color: #FB923C;
     font-weight: 600;
     font-style: normal;
-}
-
-.footer-cities-list a.cities-more:hover {
-    background: rgba(251, 146, 60, 0.12);
-    border-color: #FB923C;
-    color: #FB923C;
 }
 
 .footer-cities-title {
