@@ -1763,50 +1763,50 @@ a.situation-item {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    gap: 0.85rem 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem 0.7rem;
 }
 
 .footer-cities-list li {
-    font-size: 0.9rem;
-    line-height: 1.4;
+    font-size: 0.875rem;
+    line-height: 1;
 }
 
 .footer-cities-list a {
-    color: rgba(255, 255, 255, 0.85);
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 999px;
+    color: rgba(255, 255, 255, 0.9);
     text-decoration: none;
-    transition: color 0.2s ease;
+    transition: background 0.2s ease, border-color 0.2s ease;
 }
 
 .footer-cities-list a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.45);
     color: var(--color-white);
-    text-decoration: underline;
-    text-underline-offset: 3px;
+    text-decoration: none;
 }
 
 .footer-cities-list a.cities-more {
-    color: var(--color-white);
-    font-weight: 700;
-    font-style: italic;
+    color: #FB923C;
+    border-color: #FB923C;
+    font-weight: 600;
+    font-style: normal;
 }
 
-@media (max-width: 1200px) {
-    .footer-cities-list {
-        grid-template-columns: repeat(6, 1fr);
-    }
+.footer-cities-list a.cities-more:hover {
+    background: rgba(251, 146, 60, 0.12);
+    border-color: #FB923C;
+    color: #FB923C;
 }
 
-@media (max-width: 900px) {
-    .footer-cities-list {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-@media (max-width: 600px) {
-    .footer-cities-list {
-        grid-template-columns: repeat(2, 1fr);
-    }
+.footer-cities-title {
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
 }
 
 .footer-bottom {
